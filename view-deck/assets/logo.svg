@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="180" height="48" viewBox="0 0 180 48">
-  <defs><linearGradient id="g" x1="0" x2="1">
-    <stop stop-color="#2dd3b5"/><stop offset="1" stop-color="#0fb88f"/></linearGradient></defs>
-  <rect rx="12" width="180" height="48" fill="url(#g)"/>
-  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
-        font-family="Inter,Arial,Helvetica,sans-serif" font-size="20" fill="#08141a">TasteOS</text>
-</svg>
