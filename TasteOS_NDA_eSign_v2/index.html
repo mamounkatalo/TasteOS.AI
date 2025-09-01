@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>TasteOS — NDA e‑Sign</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>Non-Disclosure Agreement (NDA)</h1>
+      <p class="small">Demo NDA with e‑signature. Not legal advice.</p>
+      <div class="row">
+        <div><label>Your Full Name</label><input id="fullName"/></div>
+        <div><label>Email</label><input id="email"/></div>
+        <div><label>Effective Date</label><input id="date" type="date"/></div>
+      </div>
+      <hr/>
+      <h3>Signature</h3>
+      <canvas id="sig" class="signature-pad"></canvas>
+      <div class="flex"><button class="btn" id="clearSig">Clear</button></div>
+    </section>
+
+    <section class="card">
+      <h2>Agreement Summary</h2>
+      <p>Both parties agree not to disclose confidential information regarding TasteOS project, technology, or business strategy.</p>
+      <label><input type="checkbox" id="agree"/> I agree to the terms.</label>
+      <div class="flex" style="margin-top:10px">
+        <button class="btn primary" id="download">Download Signed PDF</button>
+      </div>
+    </section>
+  </main>
+  <script src="nda.js"></script>
+</body>
+</html>
