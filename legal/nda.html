@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>TasteOS — NDA</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <!-- jsPDF for client-side PDF -->
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <main class="container">
+    <div class="header">
+      <img src="assets/logo.svg" alt="TasteOS logo"/>
+      <div>
+        <h1 style="margin:0">Non‑Disclosure Agreement (NDA)</h1>
+        <div class="note">Sign online or open the official PDF version.</div>
+      </div>
+    </div>
+
+    <section class="hero">
+      <h2>Sign NDA Online</h2>
+      <p>Fill in your details and sign below. You will get a signed PDF generated in your browser.</p>
+      <label>Your Full Name</label>
+      <input id="fullName" placeholder="e.g., Mamoun Mohamaad Ahmad Katalo"/>
+      <label>Email</label>
+      <input id="email" placeholder="you@example.com"/>
+      <label>Date</label>
+      <input id="date" type="date"/>
+
+      <h3>Signature</h3>
+      <canvas id="sig" class="signature-pad"></canvas>
+      <div class="flex" style="margin-top:10px">
+        <button class="btn" id="clearSig">Clear</button>
+        <button class="btn primary" id="download">Download Signed NDA</button>
+      </div>
+      <p class="note">This e‑signature demo is for convenience only. For enterprise signatures, use Adobe Sign / DocuSign.</p>
+    </section>
+
+    <section class="card">
+      <h2>Official NDA PDF</h2>
+      <p>You can also view or download the formal Adobe‑ready PDF:</p>
+      <a class="btn primary" href="docs/TasteOS_NDA_Final_AdobeReady.pdf" target="_blank" rel="noopener">📑 View Official NDA PDF</a>
+      <p class="note">Make sure the file exists at <code>docs/TasteOS_NDA_Final_AdobeReady.pdf</code> in your repository. Adjust the path if needed.</p>
+    </section>
+  </main>
+
+  <script src="nda.js"></script>
+</body>
+</html>
